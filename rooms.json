@@ -1,0 +1,346 @@
+[
+
+{
+	"room": "tp301"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x": 3,	
+		"y": 3
+	},
+	"type": "Grupprum" ,
+    "other": 3 
+},
+{
+	"room": "tp31"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":	3,
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "tp32"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":3  
+},
+{
+	"room": "tp1"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other": 3 
+},
+{
+	"room": "tp2"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":3  
+},
+{
+	"room": "tp401"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":3  
+},
+{
+	"room": "tp402"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other": 3 
+},
+{
+	"room": "tp403"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":3  
+},
+{
+	"room": "tp404"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "tp41"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":3  
+},
+{
+	"room": "tp42"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp43"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":3  
+},
+{
+	"room": "tp44"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp45"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp4084"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp4003"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "tp4004"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 33 
+},
+{
+	"room": "tp4005"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "tp51"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp52"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp53"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":3  
+},
+{
+	"room": "tp54"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp55"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp56"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp501"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "tp5015"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "tp5016"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "tp5021"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "tp5022"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "tp5023"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "fiket"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Cafeteria" ,
+    "other":  3
+}
+
+
+]
