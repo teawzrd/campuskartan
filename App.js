@@ -1,0 +1,117 @@
+import React,{useState} from 'react';
+import './App.css';
+import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+//Tell Webpack which image-files to use.
+import TP from './temp_kartor/TP.png';
+import TP4 from './temp_kartor/TP41.png';
+import TP5 from './temp_kartor/TP51.png';
+
+
+import K from './temp_kartor/K4.png';
+import overview from './temp_kartor/overview.jpg';
+import up_button from './symbols/up_arrow.png';
+import down_button from './symbols/down_arrow.png';
+
+console.log(TP);
+
+function App() {
+  return (
+  	//App hanterar endast routern
+  	<Router>
+    <div>
+ 		<Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/tappan">
+            <Tappan />
+          </Route>
+          <Route path="/kakenhus">
+            <Kakenhus />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+function Home() {
+//Home-sida, överblicksvy
+  return (
+    <div>
+      <div className = "background">
+        <img src={overview} className = "background_image"/>
+      </div>
+    </div>
+  );
+}
+
+function Tappan() {
+	let bottom_floor = 3;
+	let top_floor = 5;
+	let current_floor = bottom_floor;
+
+	//Kallar på egen function för knappar samt bakgrund
+	if(current_floor == bottom_floor) {
+		return (
+			<div>
+			<Buttons />
+			<div className = "background">
+				<img src={TP} className = "background_image"/>
+			</div>
+    </div>
+  	);
+	}
+
+	else if(current_floor == 4) {
+		return (
+			<div>
+			<Buttons />
+			<div className = "background">
+				<img src={TP4} className = "background_image"/>
+			</div>
+    </div>
+  	);
+	}
+
+	else {
+		return (
+			<div>
+			<Buttons />
+			<div className = "background">
+				<img src={TP5} className = "background_image"/>
+			</div>
+    </div>
+  	);
+	}
+	
+}
+
+function Kakenhus() {
+	const [floor, setFloor] = useState(3);
+	console.log(floor);
+
+//Kallar på egen function för knappar samt bakgrund
+	return (
+	<div>
+		<Buttons floor={floor} setFloor={setFloor}/>
+		<div className = "background">
+			<img src={K} className = "background_image"/>
+		</div>
+    </div>
+  );
+}
+
+function Buttons(props) {
+	return (
+	<div id="up_down">
+        <img src={up_button} className = "button" onClick={() => props.setFloor(props.floor+1)}/>
+        <img src={down_button} className = "button" onClick={() => props.setFloor(props.floor-1)}/>
+    </div>
+    );
+}
+
+
+
+export default App;
