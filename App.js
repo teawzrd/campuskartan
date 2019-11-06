@@ -3,20 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";  
 
-const Room = props =>
-{
-  return(
-    <div className="commentContainer">
-      <div className="commentText">Text of whatever</div>
-      <button className="button-primary">Edit</button>
-      <button className="button-danger">Delete</button>
-    </div>
-  )
-}
-
-
-
-
 function App()
 {
   const [menuIsOpen, setMenuState] = useState(false);
@@ -116,33 +102,3 @@ function App()
 }
 
 export default App;
-
-
-/*
-function RoomTEST(arg1, arg2, arg3, arg4, arg5)
-{
-  this.roomName = arg1;
-  this.level = arg2;
-  this.type = arg3;
-  this.house = arg4;
-  this.coordinates = arg5;
-}
-
-
-
-
-function testFunction()
-{
-  let tp1 = new RoomTEST("tp1", 3, "Aula", "Täppan", "(1,2)");
-  let tp2 = new RoomTEST("tp2", 3, "Aula", "Täppan", "(4,6)");
-  let tp53 = new RoomTEST("tp53", 5, "Klassrum", "Täppan", "(4,8)");
-
-
-  let rooms = [tp1, tp2, tp53];
-
-
-
-  console.log(rooms);
-}
-
-*/
