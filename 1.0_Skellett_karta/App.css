@@ -1,0 +1,10 @@
+.background_image {
+  width: 50vh;
+  height: auto;
+  z-index: -1;
+}
+
+.button {
+  z-index: 0;
+  height: 5vh;
+}
