@@ -45,6 +45,22 @@ function Home() {
       setSearchString(event.target.value);
 
   }
+ //max kod ang togglemenu
+  const [menuIsOpen, setMenuState] = useState(false);
+
+  const toggleMenu = event =>
+  {
+    if(menuIsOpen)
+    {
+      setMenuState(false);
+    }
+    else if(!menuIsOpen)
+    {
+      setMenuState(true);
+    }
+  };
+
+  //function
   //hittar match beroende på sökord
   const match = roomName => {
     const lowerCaseWord = roomName.room.toLowerCase();
@@ -53,7 +69,11 @@ function Home() {
     return lowerCaseWord.indexOf(lowerCaseSearchString) === 0;
   }
 //hittade rum
-  var foundRooms = rooms.filter(match); 
+var foundRooms = [];
+  if(searchString != ""){
+    var foundRooms = rooms.filter(match); 
+  }
+  
 
   return (
     <div>
@@ -62,15 +82,29 @@ function Home() {
       </div>
       <div>
       {/*sökruta*/}
-        <input type="text" placeholder="Sök en sal.. " onChange={changeInput} />
+      <div className = "searchbar">
+        <input type="text"  placeholder="Sök en sal.. " onChange={changeInput} onClick={toggleMenu}/>
+      </div>
         <div id= "listElement">
       {/*listar sökresultat fint*/}
           {foundRooms.slice(0,5).map(c => (<RoomInfo data={c} key={c.room}/>))}
         
         </div>
+        <div style={{backgroundColor: "#205da2",
+        height: "10px"}} />
       </div>
     </div>
   );
+}
+//varje rad i dropdown  + props.data.house
+function RoomInfo(props){
+  return (
+    <Link to = {"/Täppan" }>
+    <div className="listOverlay">
+    {props.data.room}
+    </div>
+    </Link>
+  )
 }
 
 function Tappan() {
@@ -137,16 +171,8 @@ function Buttons(props) {
     </div>
     );
 }
-//varje rad i dropdown  + props.data.house
-function RoomInfo(props){
-  return (
-    <Link to = {"/Täppan" }>
-    <div id="listOverlay">
-    {props.data.room}
-    </div>
-    </Link>
-  )
-}
+
+
 
 export default App;
 

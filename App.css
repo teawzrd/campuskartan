@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   width: 360px;
+  background: blue;
 }
 
 .App-logo {
@@ -34,6 +35,19 @@
   height: 5 px;
   background-color: black;
   margin: 6 px;
+}
+
+.listOverlay {
+  background-color: red;
+  
+
+}
+#listElement {
+  position: fixed;
+
+}
+.searchbar{
+  align-items: center;
 }
 
 
