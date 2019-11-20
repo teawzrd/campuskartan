@@ -341,6 +341,213 @@
 	"type": "Cafeteria" ,
     "other":  3
 }
-
-
+{
+	"room": "Studentkök (tp5)"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Studentkök" ,
+    "other":  3
+}
+{
+	"room": "K1"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+}
+{
+	"room": "K2"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+}
+{
+	"room": "K3"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+}
+{
+	"room": "K4"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+}
+{
+	"room": "K21"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+}
+{
+	"room": "K22"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+}
+{
+	"room": "K23"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+}
+{
+	"room": "K24"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+}
+{
+	"room": "K25"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+}
+{
+	"room": "Färgeriet"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Övrigt" ,
+    "other":  3
+}
+{
+	"room": "K101"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+}
+{
+	"room": "K102"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+}
+{
+	"room": "K103"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+}
+{
+	"room": "K104"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+}
+{
+	"room": "K105"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+}
+{
+	"room": "K106"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+}
+{
+	"room": "Studentkök (k1)"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Studentkök" ,
+    "other":  3
+}
+{
+	"room": "Bibliotek"  ,
+	"floor": 3 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Bibliotek" ,
+    "other":  3
+}
 ]
