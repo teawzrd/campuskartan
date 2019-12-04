@@ -1,0 +1,740 @@
+[
+
+{
+	"room": "tp301"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x": 3,	
+		"y": 3
+	},
+	"type": "Grupprum" ,
+    "other": 3 
+},
+{
+	"room": "tp31"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":	3,
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "tp32"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":3  
+},
+{
+	"room": "tp1"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":150,	
+		"y":240
+	},
+	"type": "Föreläsningssal" ,
+    "other": 3 
+},
+{
+	"room": "tp2"  ,
+	"floor": 3 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":3  
+},
+{
+	"room": "tp401"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":3  
+},
+{
+	"room": "tp402"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other": 3 
+},
+{
+	"room": "tp403"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":3  
+},
+{
+	"room": "tp404"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "tp41"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":3  
+},
+{
+	"room": "tp42"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp43"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":3  
+},
+{
+	"room": "tp44"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp45"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp4084"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp4003"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "tp4004"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 33 
+},
+{
+	"room": "tp4005"  ,
+	"floor": 4 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "tp51"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other": 3 
+},
+{
+	"room": "tp52"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp53"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":3  
+},
+{
+	"room": "tp54"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp55"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp56"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "tp501"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "tp5015"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "tp5016"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "tp5021"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "tp5022"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "tp5023"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other": 3 
+},
+{
+	"room": "fiket"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Cafeteria" ,
+    "other":  3
+},
+{
+	"room": "Studentkök (tp5)"  ,
+	"floor": 5 ,
+	"house":  "Täppan",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Studentkök" ,
+    "other":  3
+},
+{
+	"room": "K1"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+},
+{
+	"room": "K2"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+},
+{
+	"room": "K3"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+},
+{
+	"room": "K4"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Föreläsningssal" ,
+    "other":  3
+},
+{
+	"room": "K21"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "K22"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "K23"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "K24"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "K25"  ,
+	"floor": 2 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "Färgeriet"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Övrigt" ,
+    "other":  3
+},
+{
+	"room": "K101"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K102"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K103"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K104"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K105"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K106"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "Studentkök (k1)"  ,
+	"floor": 1 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Studentkök" ,
+    "other":  3
+},
+{
+	"room": "Bibliotek"  ,
+	"floor": 3 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Bibliotek" ,
+    "other":  3
+},
+{
+	"room": "K42"  ,
+	"floor": 4 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Lektionssal" ,
+    "other":  3
+},
+{
+	"room": "K5420"  ,
+	"floor": 4 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "K5421"  ,
+	"floor": 4 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+},
+{
+	"room": "K52"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Bildsal" ,
+    "other":  3
+},
+{
+	"room": "K501"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K502"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K505"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2509"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Musiksal" ,
+    "other":  3
+},
+{
+	"room": "K2515"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2516"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2517"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2529"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2525"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2526"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2527"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K2528"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Grupprum" ,
+    "other":  3
+},
+{
+	"room": "K4507"  ,
+	"floor": 5 ,
+	"house":  "Kåken",
+	"coord": {
+		"x":3,	
+		"y":3
+	},
+	"type": "Datorsal" ,
+    "other":  3
+}
+]
