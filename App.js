@@ -1,204 +1,99 @@
+/* FUNCTIONS */
 import React,{useState} from 'react';
-import rooms from './rooms.json';
-import './App.css';
 import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-//Tell Webpack which image-files to use.
-import TP from './temp_kartor/TP.png';
-import TP4 from './temp_kartor/TP41.png';
-import TP5 from './temp_kartor/TP51.png';
+/* COMPONENTS */
+import Tappan from './tappan.js';
+import Kakenhus from './kakenhus.js';
+import TopBar from './topbar.js';
+import SearchBar from './searchbar.js';
+import Home from './home.js';
+import HomeTopBar from './hometopbar.js';
 
-import pin from './symbols/pin.png';
-
-
-import K2 from './temp_kartor/K_2.svg';
-import T3 from './temp_kartor/TP_3.svg';
-
-import overview from './temp_kartor/overview.jpg';
-import up_button from './symbols/up_arrow.png';
-import down_button from './symbols/down_arrow.png';
+/* STYLE */
+import './App.css';
 
 
-function App() {
+function App() 
+{
   return (
-  	//App hanterar endast routern
-  	<Router>
-    <div>
- 		<Switch>
-          <Route exact path="/Täppan">
-            <Tappan />
-          </Route>
-          <Route path="/Täppan/:floor/:room/:x/:y" component={Tappan}/>                                                    
-          <Route path="/Kåken">   
-            <Kakenhus />
-          </Route>
+  	<div>
+
+    	<Router>
+   		  <Switch>
+
           <Route exact path="/">
+            <HomeTopBar />
+            <SearchBar /> 
             <Home />
           </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
-//Home-sida, överblicksvy
-function Home() {
 
-//hanterar sökfunktion
-  const [searchString, setSearchString] = useState("");
-
-  function changeInput(event) {
-      setSearchString(event.target.value);
-
-  }
-
-  //function
-  //hittar match beroende på sökord
-  const match = roomName => {
-    const lowerCaseWord = roomName.room.toLowerCase();
-    const lowerCaseSearchString = searchString.toLowerCase();
-
-    return lowerCaseWord.indexOf(lowerCaseSearchString) === 0;
-  }
-//hittade rum
-var foundRooms = [];
-  if(searchString != ""){
-    var foundRooms = rooms.filter(match); 
-  }
+          <Route exact path="/Täppan/:floor" component={Tappan}/> 
+          <Route path="/Täppan/:floor/:room/:x/:y" component={Tappan}/>  
+  
+          <Route exact path="/Kåkenhus/:floor" component={Kakenhus}/> 
+          <Route path="/Kåkenhus/:floor/:room/:x/:y" component={Kakenhus}/>  
   
 
-  return (
-    <div>
-      <div>
-      <div className = "topbar"></div>
-      {/*sökruta*/}
-      <div className = "searchbar">
-        <input type="text"  placeholder="Sök en sal.. " onChange={changeInput}/>
-      </div>
-        <div id= "listElement">
-      {/*listar sökresultat fint*/}
-        <div id ="listBox">
-          {foundRooms.slice(0,5).map(c => (<RoomInfo data={c} key={c.room}/>))}
-        </div>
-        </div>
-        <div className = "background">
-        <img src={overview} className = "background_image"/>
-        </div>
-        
-      </div>
+         </Switch>
+      </Router>
+
     </div>
   );
 }
-//varje rad i dropdown  + props.data.house
-function RoomInfo(props){
-  return (
-    <Link className = "aa" to = {"/"+ props.data.house + "/" +  props.data.floor + "/" + props.data.room + "/" + props.data.coord.x + "/" + props.data.coord.y}>
-    <div className="listOverlay">
-    {props.data.room}
-    </div>
-    </Link>
-  )
-}
-
-function Tappan(props) {
-	let bottom_floor = 3;
-	let top_floor = 5;
-	let current_floor = bottom_floor;
-
-  const [floor, setFloor] = useState(3);
-  
-
-  
-
-	//Kallar på egen function för knappar samt bakgrund
-	if(current_floor == bottom_floor) {
-
-    if((props.match.params.room) === null){
-      console.log("hej");
-      return(
-        <div>
-          <Buttons floor={floor} setFloor={setFloor}/>
-          <div className = "background">
-            <img src={T3} className = "background_image"/> 
-          </div>
-        </div>
-
-        );
-    }
-    else{
-
-      return (
-        <div>
-         <Buttons floor={floor} setFloor={setFloor}/>
-        <div className = "background">
-           <img src={T3} className = "background_image"/>
-          
-          <div 
-        style={{
-          position: "absolute",
-          left: props.match.params.x +"px",
-          top: props.match.params.y +"px"
-        }}>
-        <img src={pin} className="pin"/>
-        </div>
-       </div>
-    </div>
-    );
-    }
-		
-  	
-	}
-
-
-	else if(current_floor == 4) {
-		return (
-			<div>
-			<Buttons />
-			<div className = "background">
-				<img src={TP4} className = "background_image"/>
-			</div>
-    </div>
-  	);
-	}
-
-	else {
-		return (
-			<div>
-			<Buttons />
-			<div className = "background">
-				<img src={TP5} className = "background_image"/>
-			</div>
-    </div>
-  	);
-	}
-	
-}
-
-function Kakenhus() {
-	const [floor, setFloor] = useState(3);
-	console.log(floor);
-
-//Kallar på egen function för knappar samt bakgrund
-	return (
-	<div>
-		<Buttons floor={floor} setFloor={setFloor}/>
-		<div className = "background">
-			<img src={K2} className = "background_image"/>
-		</div>
-    </div>
-  );
-}
-
-function Buttons(props) {
-	return (
-	<div id="up_down">
-        <img src={up_button} className = "button" onClick={() => props.setFloor(props.floor+1)}/>
-        <img src={down_button} className = "button" onClick={() => props.setFloor(props.floor-1)}/>
-    </div>
-    );
-}
-
 
 
 export default App;
 
 
+//====================================================================//
+//====================================================================//
+//====================================================================//
+//====================================================================//
+// ATT GÖRA:s
+//--------------------
+//-To do: (TA BESLUT) diskutera hela gruppen om detta:
+// se searchpin.js. Ska vi (går det att) anpassa koordinaten i den ist för att behöva manuellt
+// i json-filen kompensera för de pixlar som pin-bilden tar upp?
+//
+//-To do: (TA BESLUT): diskutera hela gruppen om detta:
+// ska vi ha searchbaren svävande strax under topbaren? Isf måste vi lösa det så
+// att den placeras ovanpå kartan ist för ovanför, just nu kan inte kartan synas bakom
+// utan är under den. Se designideer (3 bilder)
+//
+//TA BESLUT: ändra till Kåkenhus ist för Kåken i JSON
+// (enkelt att göra)
+//
+//-TO do: fixa så att kåkenhus går att använda igen med den mergade versionen.
+//
+//-To do: fixa så att det inte går att gå ovanför top floor i respektive byggnad
+//
+//-To do: Göra så att när man klickar på ett rum i searchbaren så ska rutan med 
+// 5 rum försvinna. Detta "löstes" innan genom att man skickades till en annan sida
+// men så kan vi inte göra nu
+//
+//-To do: lägg till en liten kryssymbol längst till höger i searchbaren som man kan ta bort
+// "TP53" exempelvis, om man sökt på denna, så blir searchbaren tom och så försvinner pin-bilden
+// på kartan.
+// 
+//-To do: fixa nya symboler för hemknappen
+//
+//fixa så att statet floor hämtas från url:en vid reload
+//
+//-To do: fixa hjälprutan (Max har en bra ide på hur den ska kodas, med { a && b} 
+// som skrivs ut om "a == true" )
+//
+//detta stod sedan innan:
+//TODO: LÄGG TILL ALT FÖR ALLA BILDER!
+//
+////////////LÄGRE PRIO:
+//---------------------------
+//-fixa nya symboler för upp och ner på våningar och hem/tillbaka-knappen
+//
+//
+//
+//
+//====================================================================//
+//====================================================================//
+//====================================================================//
+//====================================================================//
