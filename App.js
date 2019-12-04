@@ -1,105 +1,103 @@
-import React from 'react';
-//import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import {useState, useEffect} from 'react';
+/* FUNCTIONS */
+import React,{useState, useEffect} from 'react';
+import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+/* COMPONENTS */
+import Tappan from './tappan.js';
+import Kakenhus from './kakenhus.js';
+import TopBar from './topbar.js';
+import SearchBar from './searchbar.js';
+import Home from './home.js';
+import HomeTopBar from './hometopbar.js';
+import * as window from './useWindow.js'
+
+/* STYLE */
 import './App.css';
-//import {SVGMap} from 'react-svg-map';
-
-//import France from '@svg-maps/france.regions'
-
-import TP from './temp_kartor/TP.png';
-import TP4 from './temp_kartor/TP41.png';
-import TP5 from './temp_kartor/TP51.png';
-
-
-import K from './temp_kartor/K_2_vec.svg';
-import overview from './temp_kartor/overview.jpg';
-import up_button from './symbols/up_arrow.png';
-import down_button from './symbols/down_arrow.png';
-
-
-//Mål: Med hjälp av SVG-Maps och exempel, få nåt att funka (Link-map)/ Går inte måste ha en färdig karta gjord för detta
-//Svin i SVGMap en så länge. Definera En <map> div med en definierad storlek. 
-
-function goToRoom () {
-    alert("skeetit");
-}
-
-function Letsfindit () {
-  
-}
-
-//useWindowDimensions, curtosy https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs
-
-//Used in useWindowDimensions
-function getWindowDimensions () {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
-//useWindowDimenions returns to values, height and width of the viewport without reloading the page.
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return windowDimensions;
-}
-
-
-//Sends coords for popup and makes it visible
-function popup(props) {
-  alert("Use css left top retard");
-  var puCoords = props.coords;
-  console.log(puCoords);
-}
-
-
-//Takes in room position and clickable area size, returns an area with a onclick function popup
-function roomArea (props) {
-
-
-  var toString (props.coords[0], props.coords[1], props.coords[2]) {
-    return width + ", " + height + ", " + size + ";";
-  }
-
-
-  var relCoords = props.coords;
-  var absCoords = props.coords;
-
-  return (
-    <area shape="circle" coords={absCoords} alt="skeetit" onClick={popup}/>
-    );
-     
-}
 
 function App() {
-  
-  const {height, width} = useWindowDimensions();
 
-  var roomCoords = [width/2, height/2, 50]; 
+window.getWindowDimensions();
+const {height, width} = window.useWindowDimensions();
 
   return (
-    <div className = "background">
-      <header>
-        <div> width: {width} ~ height: {height} </div>
-        <div className="popup"><span className ="popuptext" id="myPopup">Im not in the right place :(</span></div>
-          <img className = "map_image" src = {K} alt="kåkenhus_2" useMap="#K_usemap"/>
-          <map className = "map" name="K_usemap">
-            <roomArea coords="coords" /> 
-            
-          </map>
-        
-      </header>
+
+
+  	<div>
+    <span>{height} ~ {width}</span>
+    	<Router>
+   		  <Switch>
+
+          <Route exact path="/">
+            <HomeTopBar />
+            <SearchBar className = "search"/> 
+            <Home />
+          </Route>
+
+          <Route exact path="/Täppan/:floor" component={Tappan}/> 
+          <Route path="/Täppan/:floor/:room/:x/:y" component={Tappan}/>  
+  
+          <Route exact path="/Kåkenhus/:floor" component={Kakenhus}/> 
+          <Route path="/Kåkenhus/:floor/:room/:x/:y" component={Kakenhus}/>  
+
+         </Switch>
+      </Router>
+
     </div>
   );
 }
 
+
 export default App;
+
+
+//====================================================================//
+//====================================================================//
+//====================================================================//
+//====================================================================//
+// ATT GÖRA:s
+//--------------------
+//-To do: (TA BESLUT) diskutera hela gruppen om detta:
+// se searchpin.js. Ska vi (går det att) anpassa koordinaten i den ist för att behöva manuellt
+// i json-filen kompensera för de pixlar som pin-bilden tar upp?
+//
+//-To do: (TA BESLUT): diskutera hela gruppen om detta:
+// ska vi ha searchbaren svävande strax under topbaren? Isf måste vi lösa det så
+// att den placeras ovanpå kartan ist för ovanför, just nu kan inte kartan synas bakom
+// utan är under den. Se designideer (3 bilder)
+//
+//TA BESLUT: ändra till Kåkenhus ist för Kåken i JSON
+// (enkelt att göra)
+//
+//-TO do: fixa så att kåkenhus går att använda igen med den mergade versionen.
+//
+//-To do: fixa så att det inte går att gå ovanför top floor i respektive byggnad
+//
+//-To do: Göra så att när man klickar på ett rum i searchbaren så ska rutan med 
+// 5 rum försvinna. Detta "löstes" innan genom att man skickades till en annan sida
+// men så kan vi inte göra nu
+//
+//-To do: lägg till en liten kryssymbol längst till höger i searchbaren som man kan ta bort
+// "TP53" exempelvis, om man sökt på denna, så blir searchbaren tom och så försvinner pin-bilden
+// på kartan.
+// 
+//-To do: fixa nya symboler för hemknappen
+//
+//fixa så att statet floor hämtas från url:en vid reload
+//
+//-To do: fixa hjälprutan (Max har en bra ide på hur den ska kodas, med { a && b} 
+// som skrivs ut om "a == true" )
+//
+//detta stod sedan innan:
+//TODO: LÄGG TILL ALT FÖR ALLA BILDER!
+//
+////////////LÄGRE PRIO:
+//---------------------------
+//-fixa nya symboler för upp och ner på våningar och hem/tillbaka-knappen
+//
+//
+//
+//
+//====================================================================//
+//====================================================================//
+//====================================================================//
+//====================================================================//

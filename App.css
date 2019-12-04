@@ -1,89 +1,20 @@
-.App {
+.App 
+{
   text-align: center;
+  width: 360px;
+  background: blue;
 }
 
-.App-logo {
+.App-logo 
+{
   height: 40vmin;
 }
 
-.map {
-  width: 50vh;
-  height: 50px;
-  position: center;
-  z-index: -1;
-  margin: 2;
-}
-.background {
-  background-color: grey;
-}
-
-.map_image {
-  width: 100%;
-  position: center;
-  z-index: -1;
-  margin: 2;
-}
-
-/*Pop up CSS curtosy of https://www.w3schools.com/howto/howto_js_popup.asp*/
-
-/* Popup container */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-  visibility: hidden;
-  width: 160px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-} 
-/*curtosy of https://www.w3schools.com/howto/howto_js_popup.asp*/
-
-
-.App-header {
+.App-header 
+{
   background-color: #282c34;
-  min-height: 100vh;
+  width: 375px;
+  height: 103px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,6 +23,111 @@
   color: white;
 }
 
-.App-link {
+.App-link 
+{
   color: #09d3ac;
+}
+
+.Meny 
+{
+  background-color: blue;
+  width: 20 px;
+  height: 20 px;
+  align-content: left;
+}
+
+.bar 
+{
+  width: 35 px;
+  height: 5 px;
+  background-color: black;
+  margin: 6 px;
+}
+
+.search {
+  position: absolute;
+}
+
+.listOverlay 
+{
+  background-color: white;
+  
+  height: 5.5vh;
+  padding: 2px 3px;
+  border-width: 0px 1px 1px 1px;
+  border-style: inset;
+  border-color: #979595;
+  font-size: 18px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#listElement 
+{
+  width: 100%;
+}
+
+#listBox
+{
+  background-color: blue;
+  width: 73vw;
+  margin: auto;
+  box-shadow: 3px 3px 5px #888888;
+}
+
+.searchbar
+{
+  text-align: center;
+}
+
+input
+{
+  width: 77vw;
+  height: 25px;
+  border-radius: 10px;
+  margin-top: 2vh;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  padding: 2px 4px;
+  box-shadow: 1px 2px 5px #888888;
+  position: relative;
+}
+
+.background_image
+{
+  position: absolute;
+  width: 600px;
+  height: auto;
+  z-index: -1;
+  margin-top: 5vh;
+}
+
+.button 
+{
+  z-index: 0;
+  height: 5vh;
+}
+
+.aa
+{
+  text-decoration: none;
+  color: black;
+}
+
+.topbar
+{
+  height: 10vh;
+  background-color: green;
+}
+
+.pin
+{
+  height: 40px;
+}
+
+#campuskartan_logo
+{
+  color: white;
+  font-size: 60px;
+  font-weight: 6;
+  margin-left: 10%;
 }
