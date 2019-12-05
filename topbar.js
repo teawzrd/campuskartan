@@ -5,6 +5,8 @@ import { useState } from "react";
 import { Router, Route, Switch, Link } from "react-router-dom";
 import upButton from './symbols/up_white.svg';
 import downButton from './symbols/down_white.svg';
+import upButtonGrey from './symbols/up_grey.svg';
+import downButtonGrey from './symbols/down_grey.svg';
 import homeButton from './symbols/home.svg'; 
 import InfoButton from './symbols/questionmark.png';
 import Kakenhus from './kakenhus.js';
@@ -37,7 +39,33 @@ const TopBar = props =>
   }
 
 
+
+  const getUpButton = () =>
+  {
+    if(floor == topFloor){
+      return "up_grey";
+    }
+    else{
+      return "up_white";
+    }
+  }
+
+  const getDownButton = () =>
+  {
+    if(floor == bottomFloor){
+      return "down_grey";
+    }
+    else{
+      return "down_white";
+    }
+  }
+
+
+  
+
+
   const [floor, setFloor] = useState(defaultFloor);
+
 
 
   //ändrar statet floor
@@ -130,7 +158,7 @@ const TopBar = props =>
 
         <Link to={"/" + props.building + "/" + toFloor("down") } >
           <div onClick={down}>
-            <img src={downButton} style={{ height:30 }} className="arrow"/>
+            <img src={require('./symbols/' + getDownButton() + '.svg')} style={{ height:30 }} className="arrow"/>
           </div>
         </Link>
 
@@ -140,7 +168,7 @@ const TopBar = props =>
 
         <Link to={"/" + props.building + "/" + toFloor("up") } >
           <div onClick={up}>
-            <img src={upButton} style={{ height:30 }} className="arrow"/>
+            <img src={require('./symbols/' + getUpButton() + '.svg')} style={{ height:30 }} className="arrow"/>
           </div>
         </Link>
 

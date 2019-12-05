@@ -10,18 +10,18 @@ const SearchPin = () =>
 
     if(room === undefined)
     {
-      console.log("hej------1 -- room = " + room);
+     
 
       return(
         <div>
-          <h1>ROOM IS UNDEFINED</h1>
+          
         </div>
       );
     }
 
     else
     {
-      console.log("hej------2 -- room = " + room);
+      
 
       return(
         <div style={{

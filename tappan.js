@@ -29,8 +29,8 @@ const Tappan = props =>
 			</div>
 
 
-			<br/><br/>
-			You are now on floor: {floor}
+			
+			
 	    </div>
 	  
 	);
