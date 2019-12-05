@@ -151,6 +151,8 @@ const TopBar = props =>
       </div>
 
 
+      {/*
+        */}
       { 
         infoBoxIsOpen 
         && 
@@ -164,3 +166,8 @@ const TopBar = props =>
 
 
 export default TopBar;
+
+
+/*
+
+*/

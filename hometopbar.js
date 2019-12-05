@@ -30,7 +30,7 @@ const HomeTopBar = props =>
       <div className="top-bar">
         
         <div id="campuskartan_logo" style={{ marginRight:20 }}>
-          CampusKartan
+          
         </div>
 
 

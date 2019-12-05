@@ -9,7 +9,6 @@ import pin from './symbols/pin.png';
 
 let showList = true;
 
-
 function SearchBar(props) 
 {
   //console.log("In SearchBar " +props.selectedR);
@@ -50,12 +49,11 @@ console.log("searchString: " + searchString)
     setSearchString(room); 
 
     foundRooms = [];
-
     showList = false;
 
   }
 
-  function hideSearchBar(event) 
+  {/*function hideSearchBar(event) 
   {
 
     //document.getElementById("searchBox").value = room;
@@ -66,7 +64,9 @@ console.log("searchString: " + searchString)
     foundRooms = [];
 
     //console.log("xxxxxxx    xxxx");
-  }
+  }*/}
+
+  
 
 
 
@@ -109,7 +109,7 @@ console.log("searchString: " + searchString)
     //   return room; // eller toString(room);
     // }
   }
-  console.log(props.building);
+  
   
 
   return(
@@ -118,13 +118,12 @@ console.log("searchString: " + searchString)
         {/*sökruta*/}
           <div className = "searchbar">
             <input type="text" id="searchBox" placeholder={placeholder} value={searchString} onChange={changeInput}/>
-            {/*<Link to={"/" + props.building}>*/}
-
+            
           </div>
           
           <div id= "listElement">
           {/*listar sökresultat fint*/}
-            <div id ="listBox">
+            <div id ="listBox" >
               {foundRooms.slice(0,5).map(c => (<div onClick={ () => test(c.room) } ><RoomInfo data={c} state={showList} key={c.room}/></div>))}
             </div>
           </div>

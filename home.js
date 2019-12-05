@@ -27,7 +27,7 @@ function Overview(props)
 
   return(
     <div> 
-      <img src={overviewMap} alt="overviewMap" useMap="#overview"/>
+      <img src={overviewMap} alt="overviewMap" id="overwiewImg"  useMap="#overview"/>
         <map name="overview">
           <Link to={"/Täppan/3"}> <area shape="rect" coords={tappanDim} alt="tappan"/> </Link>
         </map>
