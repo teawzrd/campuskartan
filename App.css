@@ -1,3 +1,7 @@
+* {
+ box-sizing: border-box;
+}
+
 .App 
 {
   text-align: center;
@@ -177,10 +181,11 @@ input
 {
   z-index: 1;
   height:100%;
-  /*margin: 2vh;*/ /*Won't work, infoBox needs to be inside a container also containing top_bar*/ 
-  width:100%;
-  background-color: green;
+  margin: 2vh; /*Won't work, infoBox needs to be inside a container also containing top_bar*/ 
+  width: 100%;
+  background-color: #b4d1b4;
   position: absolute;
+  box-sizing: border-box;
 }
 
 .infoBox div
