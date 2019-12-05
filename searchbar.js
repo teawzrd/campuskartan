@@ -1,20 +1,22 @@
 import React,{useState} from 'react';
 import rooms from './rooms.json';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, useParams, Link } from "react-router-dom";
 
 import T3 from './temp_kartor/TP51.png';
 import overview from './temp_kartor/overview.jpg';
 import pin from './symbols/pin.png';
 
+let showList = true;
 
-function SearchBar() 
+
+function SearchBar(props) 
 {
   //console.log("In SearchBar " +props.selectedR);
 
   return(
-    <div  style={ {position: 'absolute', width: '100%'}}>
-      <SearchFunction />
+    <div style={  {/*backgroundColor: 'darkgreen'*/} }>
+      <SearchFunction building={props}/>
     </div>
   );
 }
@@ -23,7 +25,7 @@ function SearchBar()
  
 
 //sökfunktionen
-function SearchFunction() 
+function SearchFunction(props) 
 {
   //hanterar sökfunktion
   const [searchString, setSearchString] = useState("");
@@ -36,6 +38,7 @@ console.log("searchString: " + searchString)
   {
     
       setSearchString(event.target.value);
+      showList = true;
   }
 
   //console.log("onChange"+searchString);
@@ -47,6 +50,8 @@ console.log("searchString: " + searchString)
     setSearchString(room); 
 
     foundRooms = [];
+
+    showList = false;
 
   }
 
@@ -104,33 +109,34 @@ console.log("searchString: " + searchString)
     //   return room; // eller toString(room);
     // }
   }
-  
+  console.log(props.building);
   
 
   return(
-    
+    <div>
       <div>
         {/*sökruta*/}
           <div className = "searchbar">
             <input type="text" id="searchBox" placeholder={placeholder} value={searchString} onChange={changeInput}/>
-            
+            {/*<Link to={"/" + props.building}>*/}
+
           </div>
           
           <div id= "listElement">
           {/*listar sökresultat fint*/}
-            <div id ="listBox" >
-              {foundRooms.slice(0,5).map(c => (<div onClick={ () => test(c.room) } ><RoomInfo data={c}  key={c.room}/></div>))}
+            <div id ="listBox">
+              {foundRooms.slice(0,5).map(c => (<div onClick={ () => test(c.room) } ><RoomInfo data={c} state={showList} key={c.room}/></div>))}
             </div>
           </div>
       </div>
-
+    </div>
   );
 }
 // onClick={hideSearchBar}
 function RoomInfo(props)
 {
    
-
+if(props.state){
 
   return(
     
@@ -144,6 +150,13 @@ function RoomInfo(props)
     </Link> 
     
   );
+}
+else{
+
+return(
+<div></div>
+  );
+}
 }
 
 
