@@ -1,0 +1,153 @@
+body {
+  background-color:#748275;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+#overwiewImg{
+  margin-top: 30px;
+}
+.App 
+{
+  text-align: center;
+  width: 360px;
+  background: blue;
+}
+
+.App-logo 
+{
+  height: 40vmin;
+}
+
+.background {
+  /*margin-top: 100px;*/
+  margin-top: 2vh;
+  position: relative;
+  width: 100vw;
+}
+
+.App-header 
+{
+  background-color: #282c34;
+  width: 375px;
+  height: 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link 
+{
+  color: #09d3ac;
+}
+
+.Meny 
+{
+  background-color: blue;
+  width: 20 px;
+  height: 20 px;
+  align-content: left;
+}
+
+.bar 
+{
+  width: 35 px;
+  height: 5 px;
+  background-color: black;
+  margin: 6 px;
+}
+
+.listOverlay 
+{
+  /*width: 77vw;*/
+  background-color: white;
+  height: 5.5vh;
+  padding: 2px 3px;
+  border-width: 0px 1px 1px 1px;
+  border-style: inset;
+  border-color: #979595;
+  font-size: 18px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#listElement 
+{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#listBox
+{
+  background-color: blue;
+  width: 77vw;
+  margin: auto;
+  box-shadow: 3px 3px 5px #888888;
+}
+
+.searchbar
+{
+  text-align: center;
+/*
+  margin-left: 20%;
+  margin-right: 20%;
+  */
+}
+
+input
+{
+  width: 77vw;
+  height: 6vh;
+  border-radius: 10px;
+  margin-top: 2vh;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  padding: 2px 4px;
+  box-shadow: 1px 2px 5px #888888;
+  /*left: 20%;*/
+}
+
+.background_image
+{
+  width: 100%;
+  height: 100vh;
+  height: auto;
+  z-index: -1;
+}
+
+.button 
+{
+  z-index: 0;
+  height: 5vh;
+}
+
+.aa
+{
+  text-decoration: none;
+  color: black;
+}
+
+.topbar
+{
+  height: 10vh;
+  background-color: green;
+}
+
+.pin
+{
+    height: 50px;
+}
+
+#campuskartan_logo
+{
+  color: white;
+  font-size: 60px;
+  font-weight: 6;
+  margin-left: 10%;
+}
+
