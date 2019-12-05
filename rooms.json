@@ -443,7 +443,7 @@
 {
 	"room": "K1"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -454,7 +454,7 @@
 {
 	"room": "K2"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -465,7 +465,7 @@
 {
 	"room": "K3"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -476,7 +476,7 @@
 {
 	"room": "K4"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -487,7 +487,7 @@
 {
 	"room": "K21"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -498,7 +498,7 @@
 {
 	"room": "K22"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -509,7 +509,7 @@
 {
 	"room": "K23"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -520,7 +520,7 @@
 {
 	"room": "K24"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -531,7 +531,7 @@
 {
 	"room": "K25"  ,
 	"floor": 2 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -542,7 +542,7 @@
 {
 	"room": "Färgeriet"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -553,7 +553,7 @@
 {
 	"room": "K101"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -564,7 +564,7 @@
 {
 	"room": "K102"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -575,7 +575,7 @@
 {
 	"room": "K103"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -586,7 +586,7 @@
 {
 	"room": "K104"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -597,7 +597,7 @@
 {
 	"room": "K105"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -608,7 +608,7 @@
 {
 	"room": "K106"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -619,7 +619,7 @@
 {
 	"room": "Studentkök (k1)"  ,
 	"floor": 1 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -630,7 +630,7 @@
 {
 	"room": "Bibliotek"  ,
 	"floor": 3 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -641,7 +641,7 @@
 {
 	"room": "K42"  ,
 	"floor": 4 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -652,7 +652,7 @@
 {
 	"room": "K5420"  ,
 	"floor": 4 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -663,7 +663,7 @@
 {
 	"room": "K5421"  ,
 	"floor": 4 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -674,7 +674,7 @@
 {
 	"room": "K52"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -685,7 +685,7 @@
 {
 	"room": "K501"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -696,7 +696,7 @@
 {
 	"room": "K502"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -707,7 +707,7 @@
 {
 	"room": "K505"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -718,7 +718,7 @@
 {
 	"room": "K2509"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -729,7 +729,7 @@
 {
 	"room": "K2515"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -740,7 +740,7 @@
 {
 	"room": "K2516"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -751,7 +751,7 @@
 {
 	"room": "K2517"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -762,7 +762,7 @@
 {
 	"room": "K2529"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -773,7 +773,7 @@
 {
 	"room": "K2525"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -784,7 +784,7 @@
 {
 	"room": "K2526"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -795,7 +795,7 @@
 {
 	"room": "K2527"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -806,7 +806,7 @@
 {
 	"room": "K2528"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
@@ -817,7 +817,7 @@
 {
 	"room": "K4507"  ,
 	"floor": 5 ,
-	"house":  "Kåken",
+	"house":  "Kåkenhus",
 	"coord": {
 		"x":3,	
 		"y":3
