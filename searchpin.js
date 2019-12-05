@@ -21,7 +21,7 @@ const SearchPin = () =>
 
     else
     {
-      console.log("hej------2 -- room = " + room);
+      //console.log("hej------2 -- room = " + room);
 
       return(
         <div style={{

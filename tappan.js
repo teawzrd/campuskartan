@@ -19,7 +19,7 @@ const Tappan = props =>
         <div>
 
         	<TopBar building={"Täppan"} floorFromURL={floor}/>
-        	<SearchBar />	
+        	<SearchBar selectedRoom="22" />	
 
 			<div className = "background">
 				<img src={require('./temp_kartor/TP_floor' + floor + '.svg')} className="background_image"/>
